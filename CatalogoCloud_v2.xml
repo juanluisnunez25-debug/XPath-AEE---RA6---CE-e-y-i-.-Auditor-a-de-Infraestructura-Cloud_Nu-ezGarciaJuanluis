@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo_cloud xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                xsi:noNamespaceSchemaLocation="CatalogoCloud_v2.xsd">
+
+  <servidor id="srv-web-01" rack="R-01" estado="activo">
+    <hardware>
+      <cpu>Intel Xeon</cpu>
+      <ram>64GB</ram>
+      <gpu>NVIDIA RTX</gpu>
+      <discos>
+        <disco>SSD 1TB</disco>
+      </discos>
+    </hardware>
+    <software>Windows Server</software>
+    <red>
+      <ip_fija>192.168.1.10</ip_fija>
+    </red>
+    <auditoria>
+      <fecha_revision>2026-03-25</fecha_revision>
+      <tecnico>Admin1</tecnico>
+      <nota>Revisión OK</nota>
+    </auditoria>
+  </servidor>
+
+  <servidor id="srv-backup-01" rack="R-02" estado="mantenimiento">
+    <hardware>
+      <cpu>AMD EPYC</cpu>
+      <ram>128GB</ram>
+      <discos>
+        <disco>HDD 4TB</disco>
+      </discos>
+    </hardware>
+    <software>Linux Ubuntu</software>
+    <red>
+      <dhcp>si</dhcp>
+    </red>
+    <auditoria>
+      <nota>Pendiente de ampliar RAM</nota>
+      <fecha_revision>2026-03-24</fecha_revision>
+      <tecnico>Admin2</tecnico>
+    </auditoria>
+  </servidor>
+
+</catalogo_cloud>
